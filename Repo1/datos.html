@@ -11,34 +11,44 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
    
 </head>
+
+password se pide dos veces, pedir fecha, pedir mail, pagina web, algun tipo de numero, y seis controles mas como minimo
+        para el pedido de dato(input de distinto tipo, select, chekbox, radio)
+
 <body>
  <div class="container">
-      <div class="freshdesignweb-top"><h1><a href="http://www.freshdesignweb.com">Fresh Design Web - Demo</a></h1></div><div class="clr"></div>
+      <div class="freshdesignweb-top"><h1><a href="http://www.freshdesignweb.com">Programación III - Clase 1</a></h1></div><div class="clr"></div>
 			<header>
 				<h1><span>Wally´s Productions</span><strong>Formulario de Registro</strong></h1>
             </header>       
       <div  class="form">
     		<form id="contactform"> 
-    			<p class="contact"><label for="name">Name</label></p> 
-    			<input id="name" name="name" placeholder="First and last name" required="" tabindex="1" type="text"> 
+    		
+          <p class="contact"><label for="clave">Crear una clave</label></p> 
+          <input type="password" id="clave" name="clave" required=""> 
+          <p class="contact"><label for="confirmaclave">Confirmar su clave</label></p> 
+          <input type="password" id="confirmaclave" name="confirmaclave" required=""> 
+
+        	<p class="contact"><label for="apellido">Apellido</label></p> 
+    			<input id="apellido" name="apellido" placeholder="Introduzca su Apellido" required="" tabindex="1" type="text"> 
+
+          <p class="contact"><label for="nombre">Nombre</label></p> 
+          <input id="nombre" name="Nombre" placeholder="Introduzca su Nombre" required="" tabindex="2" type="text"> 
     			 
     			<p class="contact"><label for="email">Email</label></p> 
-    			<input id="email" name="email" placeholder="example@domain.com" required="" type="email"> 
+    			<input id="email" name="email" placeholder="example@domain.com" required="" tabindex="3" type="email"> 
                 
-                <p class="contact"><label for="username">Create a username</label></p> 
-    			<input id="username" name="username" placeholder="username" required="" tabindex="2" type="text"> 
+          <p class="contact"><label for="username">Create a username</label></p> 
+    			<input id="username" name="username" placeholder="username" required="" tabindex="4" type="text"> 
+          <br>
+    			<input type="checkbox" name="vehicle" value="1">HTML
+          <input type="checkbox" name="vehicle" value="2">Asp 2.0 
+    			<input type="checkbox" name="vehicle" value="3">Javascript<br>
+          <input type="checkbox" name="vehicle" value="4">Asp Net 
+          <input type="checkbox" name="vehicle" value="5">C#
+          <input type="checkbox" name="vehicle" value="6">Fox Net   
 
-    			<input type="checkbox" name="vehicle" value="1">html<br>
-                <input type="checkbox" name="vehicle" value="2">asp<br> 
-    			<input type="checkbox" name="vehicle" value="3">javascript<br>
-                <input type="checkbox" name="vehicle" value="4">asp net<br> 
-                <input type="checkbox" name="vehicle" value="5">c#<br>
-                <input type="checkbox" name="vehicle" value="6">fox<br>  
-
-                <p class="contact"><label for="password">Create a password</label></p> 
-    			<input type="password" id="password" name="password" required=""> 
-                <p class="contact"><label for="repassword">Confirm your password</label></p> 
-    			<input type="password" id="repassword" name="repassword" required=""> 
+          
         
                <fieldset>
                  <label>Birthday</label>
