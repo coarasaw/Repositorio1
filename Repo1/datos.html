@@ -25,14 +25,14 @@
     		<form id="contactform"> 
     		
           <p class="contact"><label for="clave">Crear una clave</label></p> 
-          <input type="password" id="clave" name="clave" required=""> 
+          <input type="password" id="clave" name="clave" required="" tabindex="1"> 
           <p class="contact"><label for="confirmaclave">Confirmar su clave</label></p> 
-          <input type="password" id="confirmaclave" name="confirmaclave" required=""> 
+          <input type="password" id="confirmaclave" name="confirmaclave" required="" tabindex="2"> 
 
           <fieldset>
                  <label>Fecha Naciomiento</label>
                   <label class="month"> 
-                  <select class="select-style" name="BirthMonth">
+                  <select class="select-style" name="BirthMonth" tabindex="3">
                   <option value="">Mes</option>
                   <option  value="01">January</option>
                   <option value="02">February</option>
@@ -48,43 +48,43 @@
                   <option value="12" >December</option>
                   </label>
                  </select>    
-                <label>Día<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Día" required=""></label>
-                <label>Año <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Año" required=""></label>
+                <label>Día<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Día" required="" tabindex="4"></label>
+                <label>Año <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Año" required="" tabindex="5"></label>
           </fieldset>
 
           <p class="contact"><label for="email">Email</label></p> 
-          <input id="email" name="email" placeholder="example@domain.com" required="" tabindex="3" type="email"> 
+          <input id="email" name="email" placeholder="example@domain.com" required="" tabindex="6" type="email"> 
 
         	<p class="contact"><label for="pagweb">Página WEB</label></p> 
-    			<input id="pagweb" name="pagweb" placeholder="Introduzca su www.supagina.com.ar" required="" tabindex="1" type="text"> 
+    			<input id="pagweb" name="pagweb" placeholder="Introduzca su www.supagina.com.ar" required="" tabindex="7" type="text"> 
 
           <p class="contact"><label for="phone">Teléfono</label></p> 
-          <input id="phone" name="phone" placeholder="ingrese su numero telefonico" required="" type="text"> <br>
+          <input id="phone" name="phone" placeholder="ingrese su numero telefonico" required="" tabindex="8" type="text"> <br>
 
           <p class="contact"><label for="nombre">Nombre</label></p> 
-          <input id="nombre" name="Nombre" placeholder="Introduzca su Nombre" required="" tabindex="2" type="text"> 
+          <input id="nombre" name="Nombre" placeholder="Introduzca su Nombre" required="" tabindex="9" type="text"> 
     			 
     			<p class="contact"><label for="apellido">Apellido</label></p> 
-          <input id="nombre" name="apellido" placeholder="Introduzca su Apellido" required="" tabindex="2" type="text"> 
+          <input id="nombre" name="apellido" placeholder="Introduzca su Apellido" required="" tabindex="10" type="text"> 
 
           <p class="contact"><label for="sexo">Genero</label></p> 
-          <input type="radio" name="gender" value="F"> Femenino<br>
-          <input type="radio" name="gender" value="M"> Masculino<br>
+          <input type="radio" name="gender" value="F" tabindex="11"> Femenino<br>
+          <input type="radio" name="gender" value="M" tabindex="12"> Masculino<br>
  
           <p class="contact"><label for="username">Crear su usuario</label></p> 
-    			<input id="username" name="username" placeholder="username" required="" tabindex="4" type="text"> 
+    			<input id="username" name="username" placeholder="username" required="" tabindex="13" type="text"> 
 
           <br>
           <p class="contact"><label for="lenguaje">Seleciones sus lenguajes</label></p> 
           <br>
-    			<input type="checkbox" name="vehicle" value="1">HTML
-          <input type="checkbox" name="vehicle" value="2">Asp 2.0 
-    			<input type="checkbox" name="vehicle" value="3">Java
-          <input type="checkbox" name="vehicle" value="4">Asp Net 
-          <input type="checkbox" name="vehicle" value="5">C#
-          <input type="checkbox" name="vehicle" value="6">Fox Net                 
+    			<input type="checkbox" name="vehicle" value="1" tabindex="13">HTML
+          <input type="checkbox" name="vehicle" value="2" tabindex="14">Asp 2.0 
+    			<input type="checkbox" name="vehicle" value="3" tabindex="15">Java
+          <input type="checkbox" name="vehicle" value="4" tabindex="16">Asp Net 
+          <input type="checkbox" name="vehicle" value="5" tabindex="17">C#
+          <input type="checkbox" name="vehicle" value="6" tabindex="18">Fox Net                 
   
-            <select class="select-style gender" name="gender">
+            <select class="select-style gender" name="gender" tabindex="19">
             <option value="select">yo soy</option>
             <option value="m">Programdor</option>
             <option value="f">Tester</option>
@@ -92,7 +92,7 @@
             </select><br><br>
             
             
-            <input class="buttom" name="submit" id="submit" tabindex="5" value="Sign me up!" type="submit"> 	 
+            <input class="buttom" name="submit" id="submit" tabindex="20" value="Guardar Datos" type="submit"> 	 
    </form> 
   </div>       
 </div>
